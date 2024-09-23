@@ -189,9 +189,10 @@ color: black;
   color: black;
 }
 
+/* 
 .a-button:hover{
-  background-color: black;
-}
+    background-color: white;
+  } */
 
 .p-button:hover{
   background-color: white;
@@ -1218,7 +1219,7 @@ to{
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  position: fixed;
+  position: absolute;
   transition: all ease 0.05s;
   -webkit-transition: all ease 0.05s;
   -moz-transition: all ease 0.05s;
@@ -1422,7 +1423,7 @@ color: #00ffcc;
 .imp a{
   display: block;
   position: relative;
-  bottom: 430vh;
+  bottom: 445vh;
   left: 85vw;
   z-index: 1000;
 
@@ -2309,3 +2310,11 @@ body{
 .page1{
   margin-top: -10vh;
 }
+/* 
+
+.page2,.page3,.page4,.footer{
+    display:none;
+}
+.z{
+    display: none;
+} */

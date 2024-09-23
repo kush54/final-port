@@ -267,16 +267,6 @@ const leftPerspectives = [
   
   
   
-  function sendMail(){
-    let params ={
-      name:document.getElementById("name").value ,
-      email:document.getElementById("email").value,
-      message:document.getElementById("message").value,
-    }
-    emailjs.send("service_j0j94cl","template_dt64om6",params).then(alert("email sent"))
-    var id = document.getElementById("form")
-    id.reset() 
-  }
   
   
   
@@ -624,3 +614,6 @@ const leftPerspectives = [
   });
   
   createParticles();
+
+
+  
