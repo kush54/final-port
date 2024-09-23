@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+
+   <!-- fontts   -->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+     <!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  </head>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "nce9EKjD9kNWPmYxU",
+      });
+   })();
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  
+
+
+</script>
+  <body>
+    <!-- <div  class="hero"></div>
+    <div  class="hero1"></div> -->
+    <div class="cursor"></div>
+    <div class="cursorblur"></div>
+    <section id="page1" class="page1">
+      <div class="particles"></div>
+
+      <div class="nav">
+        <img src="profile.jpg" class="n-img" alt="">
+        <div class="mh">Kuljeet</div>
+        <div class="snav">
+          <a href="#page1" class="navs navs1">Home</a>
+          <a href="#page2" class="navs navs2">About</a>
+          <a href="#projects" class="navs navs3">Work</a>
+          <a href="#page6" class="navs navs4">Contact</a>
+        </div>
+        <div class="menu"><i class="fa-solid fa-bars"></i></div>
+      </div>
+
+      <div class="rest">
+        <div class="l">
+          <h2>< Hii Stranger /></h2>
+          <h1>` Welcome to <span class="edit" >${kuljeets}</span> portfolio '</h1>
+          <p>I am a MERN stack developer.</p>
+        </div>
+       <div class="bts">
+        <button class="p-button"><a href="#projects">project</a></button>
+        <button class="a-button"><a href="#page2">about</a></button>
+       </div>
+       <div class="r">
+        <img src="" alt="" class="chnage">
+       </div>
+
+      </div>
+
+   
+   
+
+    </section>
+       <div class="e">
+        <img  class="e-img" src="https://static-00.iconduck.com/assets.00/web-developer-illustration-2005x2048-fal2biag.png" alt="">
+       </div> 
+
+    <section id="page2" class="  page2">
+      <h1 class="About">About</h1>
+       <div class="divide">
+        <div class="fd">
+          <!-- <h1 class="am">about me</h1>
+         <div class="para">
+          <p>Hello! I’m kuljeet singh chouhan, a Full Stack Developer specializing in the MERN stack based in Jabalput,ujjain. With a passion for building robust and scalable web applications, I bring a comprehensive skill set in MongoDB, Express.js, React,Next js, and Node.js to every project I work on.
+
+          </p>
+          <p>I am pursuing  a degree in Btech from Jabalpur Engineering College, where I developed a solid foundation in software engineering and web development. Over the past 3 years, I’ve been deeply immersed in creating dynamic and interactive web applications that deliver exceptional user experiences.</p>
+         
+        </div> -->
+        <div id="about" class="about-section">
+          <div class="about-content">
+              <div class="profile-container">
+                  <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                  <h2 class="about-title">About Me</h2>
+              </div>
+              <p class="about-description">I'm a Full Stack Developer with a passion for crafting beautiful and functional web applications.</p>
+              
+              <div class="education">
+                  <h3>Education</h3>
+                  <p>B.Sc. in Computer Science, University XYZ</p>
+              </div>
+      
+              <div class="tech-stack">
+                  <h3>Tech Stack</h3>
+                  <div class="skills-container">
+                    
+                      <div class="skill">
+                        <img src="https://emaillistvalidation.com/blog/content/images/2023/09/HTML5_logo_and_wordmark.svg.png" alt="HTML" class="skill-icon">
+                        <span>HTML</span>
+                    </div>
+                      <div class="skill">
+                          <img src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.png" alt="CSS" class="skill-icon">
+                          <span>CSS</span>
+                      </div>
+                      <div class="skill">
+                          <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Emblem.png" alt="JavaScript" class="skill-icon">
+                          <span>JavaScript</span>
+                      </div>
+                      <div class="skill">
+                          <img src="https://1.bp.blogspot.com/-gnbHTLvkmoE/W84EgMk-AJI/AAAAAAAAFC4/e2nUNEjO8TkflGJGWP_fnlShqMJEGT95QCPcBGAYYCw/s1600/react-logo.png" alt="React" class="skill-icon">
+                          <span>React</span>
+                      </div>
+                      <div class="skill">
+                          <img src="https://logos-download.com/wp-content/uploads/2016/09/Node_logo_NodeJS.png" alt="Node.js" class="skill-icon">
+                          <span>Node.js</span>
+                      </div>
+                      <div class="skill">
+                        <img src="https://raw.githubusercontent.com/Rohan-Shakya/Rohan-Shakya/master/images/next_logo.png" alt="HTML" class="skill-icon">
+                        <span>Next js</span>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+       </div>
+       <div class="sd">
+        <h1 class="tc">techStack.js</h1>
+        <div class="gallery">
+          <div class="left">
+            <div class="inner">
+              <img
+                class="item"
+                src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png"
+                data-counter="4"
+              />
+              <img
+                class="item"
+                src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png"
+                data-counter="3"
+              />
+              <img
+                class="item"
+                src="https://cdn.slidesharecdn.com/ss_thumbnails/tailwindcss-220708140925-2a85561f-thumbnail.jpg?width=640&height=640&fit=bounds"
+                data-counter="1"
+              />
+   
+              <img
+                class="item"
+                src="https://pluspng.com/img-png/react-logo-png-javascript-logo-react-js-stickers-mugs-t-shirts-and-much-more-880x1136.jpg"
+                data-counter="2"
+              />
+              <img
+                class="item"
+                src="https://miro.medium.com/v2/resize:fit:1000/1*v3XndYeIsBtk4CkpMf7vmA.jpeg"
+                data-counter="6"
+              />
+   
+              <img
+                class="item"
+                src="https://media.licdn.com/dms/image/D4E12AQFGtCLzryEsvQ/article-cover_image-shrink_720_1280/0/1683961037831?e=2147483647&v=beta&t=ZCCnGgCZCv_v08kv8-JhZ0gnYdyq6aOi3NOBT8HEgDY"
+                data-counter="5"
+              />
+            </div>
+          </div>
+   
+          <div class="right">
+            <div class="inner">
+              <img
+                class="item"
+                src="https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA"
+                data-counter="1"
+              />
+              <img
+                class="item"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.jpg"
+                data-counter="2"
+              />
+              <img
+                class="item"
+                src="https://www.logotypes101.com/logos/432/342B0ABD6829533C56B6CA9F8D2A20AF/web_rtc_logo.png"
+                data-counter="3"
+              />
+              <img
+                class="item"
+                src="https://media.licdn.com/dms/image/D5612AQHtMsvC2VYmvg/article-cover_image-shrink_720_1280/0/1679105125435?e=2147483647&v=beta&t=FZuEAa8o1GICExM1T2Wm7DUrsyHC3B0p2as3d6zQToc"
+                data-counter="4"
+              />
+              <img
+                class="item"
+                src="https://ik.imagekit.io/ably/ghost/prod/2021/03/socket-io-logo-1.jpeg?tr=w-1728,q-50"
+                data-counter="5"
+              />
+              <img
+                class="item"
+                src="https://th.bing.com/th/id/OIP.lcVgc4TZXULnpE7IEuhuzQHaHa?w=1532&h=1532&rs=1&pid=ImgDetMain"
+                data-counter="6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- </div> -->
+
+   <div class="z">
+    <!-- <img class="z-img" src="https://th.bing.com/th/id/OIP.4cvcR5GfKVf1xqbzQUdjJAHaHh?rs=1&pid=ImgDetMain" alt=""> -->
+     <img  class="z-img" src="https://cdn.filestackcontent.com/efbSR18hT5uRKuo0zoMA" alt="">
+   </div>
+
+   <div class="page3">
+    <div id="projects" class="projects-section">
+        <h2 class="projects-title">My Projects</h2>
+        <div class="projects-container ">
+            <div class="project-card pc1">
+                <div class="project-image-container">
+                    <img src="artifex.jpg" alt="Project 1" class="project-image">
+                </div>
+                <div class="project-info">
+                    <h3>Artifex</h3>
+                    <p>Ai Saas application for ease transformation and manipulation of images in ur desired manner.</p>
+                    <a href="fk.html" class="project-link">View</a>
+                </div>
+            </div>
+            <div class="project-card pc2">
+                <div class="project-image-container">
+                    <img src="rs.jpg" alt="Project 2" class="project-image">
+                </div>
+                <div class="project-info">
+                    <h3>Rail Scouts</h3>
+                    <p>Developed a 3D navigation model for a platform, enhancing user experience and spatial awareness in station environments.</p>
+                    <a href="rs.html" class="project-link">View</a>
+                </div>
+            </div>
+            <div class="project-card pc3">
+                <div class="project-image-container">
+                    <img src="blink.jpg" alt="Project 3" class="project-image">
+                </div>
+                <div class="project-info">
+                    <h3>Blinkmeet</h3>
+                    <p>
+                      Designed and developed a random video calling and chatting app, facilitating seamless connections and spontaneous interactions among users.</p>
+                    <a href="blink.html" class="project-link">View</a>
+                </div>
+            </div>
+            <div class="project-card pc4">
+                <div class="project-image-container">
+                    <img src="duvera.jpg" alt="Project 4" class="project-image">
+                </div>
+                <div class="project-info">
+                    <h3>Duvera</h3>
+                    <p>
+                      Created an innovative e-commerce platform merging social media, enabling efficient and authentic selling of high-end merchandise to targeted audiences.</p>
+                    <a href="duv.html" class="project-link">View</a>
+                </div>
+            </div>
+            <div class="project-card pc5">
+                <div class="project-image-container">
+                    <img src="catch.jpg" alt="Project 5" class="project-image">
+                </div>
+                <div class="project-info">
+                    <h3>ConvoCloud</h3>
+                    <p>
+                      Developed a robust video conferencing app similar to Google Meet, featuring real-time communication, screen sharing, and collaboration tools for seamless interactions..</p>
+                    <a href="catch.html" class="project-link">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+    <!-- <section id="page6" class="page6 ">
+
+        <h1 class="con">CONTACT</h1>
+      <div class="contacts">
+      
+        <div class="do">
+         
+          <a href="https://www.instagram.com/____k_u_s_h____4?utm_source=qr&igsh=MW93MGU5dWI2czNlbg==" class="insta"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="do">       
+        
+          <a href="https://www.linkedin.com/in/kuljeet-singh-76383a259" class="linked-in"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="do">        <a href="https://github.com/kush54" class="git-hub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="do">        <a href="tel:9343816243"  class="call"><i class="fa-solid fa-phone"></i></i></a>
+        </div>
+        <div class="do">        <a href="#page6" class="email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+       
+      </div>
+
+     <div class="form">
+      <form id="form" action="index.html">
+          <label for="name">Name</label>
+          <input  id="name" type="text">
+          <label for="name">Email</label>
+          <input id="email" type="email">
+          <label for="name">Message</label>
+          <input id="message" style="height: 8vh;" class="message" type="text">
+          
+      </form>
+     
+       
+     </div>
+
+     <button onclick="sendMail()" class="hit">Hit Em Up</button>
+     </section> -->
+
+
+    
+     <div class="page4">
+      <div id="contact" class="contact-section">
+          <h2 class="contact-title">Get in Touch</h2>
+          <form class="contact-form" action="your-server-endpoint" method="POST">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-button">Send Message</button>
+          </form>
+          <div class="social-links">
+              <h3>Connect with Me</h3>
+              <div class="social-icons">
+                  <a href="https://github.com/yourusername" target="_blank" class="social-icon git">
+                      <img src="https://pngimg.com/uploads/github/github_PNG80.png" alt="GitHub">
+                      <span>GitHub</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="social-icon">
+                      <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG8.png" alt="LinkedIn">
+                      <span>LinkedIn</span>
+                  </a>
+                  <a href="mailto:your-email@example.com" class="social-icon">
+                      <img src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" alt="Email">
+                      <span>Email</span>
+                  </a>
+                  <a href="tel:+1234567890" class="social-icon">
+                      <img src="https://static.vecteezy.com/system/resources/previews/014/441/078/original/phone-call-icon-design-in-blue-circle-png.png" alt="Call">
+                      <span>Call</span>
+                  </a>
+                  <a href="https://www.instagram.com/yourusername" target="_blank" class="social-icon insta">
+                      <img src="https://static.vecteezy.com/system/resources/previews/017/743/717/large_2x/instagram-icon-logo-free-png.png" alt="Instagram">
+                      <span >Instagram</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+      
+     </div>
+
+     <footer class="footer">
+      <div class="footer-content">
+          <p>&copy; 2024 Kuljeet Singh Chouhan. All Rights Reserved.</p>
+          <div class="footer-links">
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+          </div>
+         
+      </div>
+  </footer>
+
+
+     <div class="imp"> 
+      <a class="i1" href="https://www.instagram.com/____k_u_s_h____4?utm_source=qr&igsh=MW93MGU5dWI2czNlbg==" ><i class="fa-brands fa-instagram"></i></a>
+      <a class="i2" href="https://www.linkedin.com/in/kuljeet-singh-76383a259" ><i class="fa-brands fa-linkedin"></i></a>
+      <a class="i3" href="https://github.com/kush54" ><i class="fa-brands fa-github"></i></a>
+      <a class="i4" href="tel:9343816243"  ><i class="fa-solid fa-phone"></i></i></a>
+      <a   class="i5" href="#page6" ><i class="fa-solid fa-envelope"></i></a>
+  </div>
+
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+    
+      function navigateTo(url) {
+      window.location.href = url;
+    }
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
+
