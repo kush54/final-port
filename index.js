@@ -464,8 +464,8 @@ const leftPerspectives = [
   document.addEventListener("mousemove",function(dets){
     cursor.style.left = dets.x + "px";
     cursor.style.top = dets.y + "px";
-    bcur.style.left = dets.x-150 + "px";
-    bcur.style.top = dets.y-150+ "px";
+    // bcur.style.left = dets.x-150 + "px";
+    // bcur.style.top = dets.y-150+ "px";
   })
   
   
@@ -545,8 +545,8 @@ const leftPerspectives = [
   var cursor = document.querySelector(".cursor")
   
   window.addEventListener("mousemove",function(dets){
-   cursor.style.left = dets.x-20+"px"
-   cursor.style.top = dets.y-20+"px"
+   cursor.style.left = dets.x+50+"px"
+   cursor.style.top = dets.y+50+"px"
   
   })
   
@@ -614,6 +614,34 @@ const leftPerspectives = [
   });
   
   createParticles();
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Wrap all page content in a main-content div
+    const content = document.createElement('div');
+    content.className = 'main-content';
+    while(document.body.firstChild) {
+      content.appendChild(document.body.firstChild);
+    }
+    document.body.appendChild(content);
+  
+    // Loader timeout
+    setTimeout(() => {
+      document.querySelector('.loader-wrapper').style.opacity = '0';
+      document.querySelector('.loader-wrapper').style.visibility = 'hidden';
+      document.body.classList.add('loaded');
+      
+      // Add smooth appear animation for each section
+      gsap.from("section", {
+        duration: 2.2,
+        y: 100,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "power4.out"
+      });
+    }, 2500);
+    
+  });
 
 
   
